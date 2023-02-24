@@ -1,16 +1,18 @@
-@import 'utilities/variables', 'layout/header', 'layout/main',
-  'components/buttons';
+@import 'utilities/variables', 'layout/header', 'layout/main-section',
+  'components/buttons', 'layout/footer';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 li,
 p {
   list-style: none;
   text-decoration: none;
+  line-height: 1.6;
   color: $neutral-very-dark-blue;
 }
 
@@ -18,5 +20,10 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: $font-size-15;
   background-color: $neutral-off-white;
+  overflow-x: hidden;
   padding: 10px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
