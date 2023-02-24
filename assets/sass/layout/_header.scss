@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   display: flex;
   justify-content: end;
@@ -38,6 +38,12 @@
 
     li {
       padding: 10px;
+      transition: $transition;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-soft-red;
+      }
     }
   }
 }
