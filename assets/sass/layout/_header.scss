@@ -27,6 +27,10 @@
   }
 }
 
+.navbar {
+  display: none;
+}
+
 .sidebar {
   background-color: rgba($neutral-dark-grayish-blue, $alpha: 0.5);
   position: absolute;

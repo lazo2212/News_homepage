@@ -22,6 +22,10 @@
   color: hsl(5, 85%, 63%);
 }
 
+.navbar {
+  display: none;
+}
+
 .sidebar {
   background-color: rgba(93, 95, 121, 0.5);
   position: absolute;
