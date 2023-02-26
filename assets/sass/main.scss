@@ -33,6 +33,10 @@ body {
     margin: 5% 10%;
     max-width: 1440px;
 
+    .navbar {
+      display: flex;
+    }
+
     .open {
       display: none;
     }

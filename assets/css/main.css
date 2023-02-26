@@ -183,6 +183,9 @@ body::-webkit-scrollbar {
     margin: 5% 10%;
     max-width: 1440px;
   }
+  body .navbar {
+    display: flex;
+  }
   body .open {
     display: none;
   }
