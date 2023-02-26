@@ -4,8 +4,13 @@ footer {
     padding: 20px 0;
 
     img {
-      width: 30%;
+      width: 28%;
     }
+
+    .container {
+      padding: 0 10px;
+    }
+
     span {
       color: $neutral-grayish-blue;
       font-size: 2rem;
@@ -24,8 +29,4 @@ footer {
       color: $neutral-grayish-blue;
     }
   }
-}
-
-.container {
-  padding: 0 10px;
 }

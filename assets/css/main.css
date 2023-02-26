@@ -7,6 +7,20 @@
 .header-container #logo {
   width: 50px;
 }
+.header-container ul {
+  display: flex;
+}
+.header-container ul li {
+  padding: 0 20px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+.header-container ul li:last-child {
+  padding-right: 0;
+}
+.header-container ul li:hover {
+  color: hsl(5, 85%, 63%);
+}
 
 .sidebar {
   background-color: rgba(93, 95, 121, 0.5);
@@ -20,7 +34,7 @@
 }
 .sidebar .sidebar-container {
   position: relative;
-  background-color: hsl(36deg, 100%, 99%);
+  background-color: hsl(36, 100%, 99%);
   height: inherit;
   width: 60%;
   display: flex;
@@ -40,7 +54,7 @@
   cursor: pointer;
 }
 .sidebar ul li:hover {
-  color: hsl(5deg, 85%, 63%);
+  color: hsl(5, 85%, 63%);
 }
 
 .close {
@@ -53,17 +67,17 @@
 }
 .main-section h1 {
   font-size: 2.5rem;
-  color: hsl(240deg, 100%, 5%);
+  color: hsl(240, 100%, 5%);
 }
 .main-section p {
   padding: 10px 0;
-  color: hsl(236deg, 13%, 42%);
+  color: hsl(236, 13%, 42%);
 }
 .main-section button {
   padding: 10px 25px;
   margin: 20px 0;
-  background-color: hsl(5deg, 85%, 63%);
-  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -71,17 +85,17 @@
   transition: 0.6s ease;
 }
 .main-section button:hover {
-  background-color: hsl(240deg, 100%, 5%);
+  background-color: hsl(240, 100%, 5%);
 }
 
 .side-section {
-  background-color: hsl(240deg, 100%, 5%);
-  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
   padding: 15px;
   margin: 40px 0;
 }
 .side-section h2 {
-  color: hsl(35deg, 77%, 62%);
+  color: hsl(35, 77%, 62%);
   padding: 10px 0;
 }
 .side-section h3 {
@@ -89,15 +103,15 @@
   transition: 0.6s ease;
 }
 .side-section h3:hover {
-  color: hsl(35deg, 77%, 62%);
+  color: hsl(35, 77%, 62%);
 }
 .side-section p {
-  color: hsl(233deg, 8%, 79%);
+  color: hsl(233, 8%, 79%);
   padding: 5px 0;
 }
 .side-section article {
   padding: 20px 0;
-  border-bottom: 1px solid hsl(233deg, 8%, 79%);
+  border-bottom: 1px solid hsl(233, 8%, 79%);
 }
 .side-section article:last-child {
   border-bottom: none;
@@ -114,10 +128,13 @@ footer article {
   padding: 20px 0;
 }
 footer article img {
-  width: 30%;
+  width: 28%;
+}
+footer article .container {
+  padding: 0 10px;
 }
 footer article span {
-  color: hsl(233deg, 8%, 79%);
+  color: hsl(233, 8%, 79%);
   font-size: 2rem;
 }
 footer article h3 {
@@ -125,14 +142,10 @@ footer article h3 {
   transition: 0.6s ease;
 }
 footer article h3:hover {
-  color: hsl(5deg, 85%, 63%);
+  color: hsl(5, 85%, 63%);
 }
 footer article p {
-  color: hsl(233deg, 8%, 79%);
-}
-
-.container {
-  padding: 0 10px;
+  color: hsl(233, 8%, 79%);
 }
 
 * {
@@ -147,16 +160,80 @@ p {
   list-style: none;
   text-decoration: none;
   line-height: 1.6;
-  color: hsl(240deg, 100%, 5%);
+  color: hsl(240, 100%, 5%);
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  background-color: hsl(36deg, 100%, 99%);
+  background-color: hsl(36, 100%, 99%);
   overflow-x: hidden;
   padding: 10px;
 }
 body::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    margin: 5% 10%;
+    max-width: 1440px;
+  }
+  body .open {
+    display: none;
+  }
+  body main {
+    height: 70vh;
+    margin: 40px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .main-section {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  body main .main-section img {
+    height: 100%;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding: 0;
+  }
+  body main .main-section h1 {
+    font-size: 3rem;
+    margin: 20px 20px 0 0;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  body main .main-section p {
+    margin: 20px 0 0 0;
+    grid-column: 3/5;
+    grid-row: 3;
+  }
+  body main .main-section button {
+    grid-column: 3/5;
+    grid-row: 4;
+    margin: 0 40% 0 0;
+  }
+  body main .side-section {
+    width: 30%;
+    height: 100%;
+  }
+  body main .side-section h2 {
+    font-size: 2rem;
+  }
+  body footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body footer .container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
