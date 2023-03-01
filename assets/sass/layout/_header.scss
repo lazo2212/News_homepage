@@ -40,6 +40,7 @@
   width: 100vw;
   display: flex;
   justify-content: end;
+  transition: width 0.5s;
 
   .sidebar-container {
     position: relative;
@@ -72,5 +73,6 @@
 }
 
 .close {
-  right: -120%;
+  width: 0;
+  transition: width 0.5s;
 }
