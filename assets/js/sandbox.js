@@ -4,9 +4,9 @@ const mainImg = document.querySelector('#main-img');
 
 // change mainImg based on window width
 if (window.innerWidth > 750) {
-  mainImg.src = '/assets/images/image-web-3-desktop.jpg';
+  mainImg.src = 'assets/images/image-web-3-desktop.jpg';
 } else {
-  mainImg.src = '/assets/images/image-web-3-mobile.jpg';
+  mainImg.src = 'assets/images/image-web-3-mobile.jpg';
 }
 
 buttons.forEach((button) =>
