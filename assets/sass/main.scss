@@ -16,11 +16,15 @@ p {
   color: $neutral-very-dark-blue;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: $font-size-15;
   background-color: $neutral-off-white;
-  overflow-x: hidden;
   padding: 10px;
 
   &::-webkit-scrollbar {

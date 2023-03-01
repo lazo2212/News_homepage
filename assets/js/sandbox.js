@@ -13,8 +13,10 @@ buttons.forEach((button) =>
   button.addEventListener('click', () => {
     sidebar.classList.toggle('close');
     if (sidebar.classList[1] !== 'close') {
+      document.html.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
     } else {
+      document.html.style.overflow = 'scroll';
       document.body.style.overflow = 'scroll';
     }
   })

@@ -172,11 +172,15 @@ p {
   color: hsl(240deg, 100%, 5%);
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   background-color: hsl(36deg, 100%, 99%);
-  overflow-x: hidden;
   padding: 10px;
 }
 body::-webkit-scrollbar {
