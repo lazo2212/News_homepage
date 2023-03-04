@@ -19,7 +19,7 @@
   padding-right: 0;
 }
 .header-container ul li:hover {
-  color: hsl(5deg, 85%, 63%);
+  color: hsl(5, 85%, 63%);
 }
 
 .navbar {
@@ -35,11 +35,10 @@
   width: 100vw;
   display: flex;
   justify-content: end;
-  transition: width 0.5s;
 }
 .sidebar .sidebar-container {
   position: relative;
-  background-color: hsl(36deg, 100%, 99%);
+  background-color: hsl(36, 100%, 99%);
   height: inherit;
   width: 60%;
   display: flex;
@@ -54,17 +53,17 @@
   margin: 40px 10px;
 }
 .sidebar ul li {
-  padding: 10px;
+  font-size: 1.4rem;
+  padding: 20px 10px;
   transition: 0.6s ease;
   cursor: pointer;
 }
 .sidebar ul li:hover {
-  color: hsl(5deg, 85%, 63%);
+  color: hsl(5, 85%, 63%);
 }
 
 .close {
   width: 0;
-  transition: width 0.5s;
 }
 
 .main-section img {
@@ -73,17 +72,17 @@
 }
 .main-section h1 {
   font-size: 2.5rem;
-  color: hsl(240deg, 100%, 5%);
+  color: hsl(240, 100%, 5%);
 }
 .main-section p {
   padding: 10px 0;
-  color: hsl(236deg, 13%, 42%);
+  color: hsl(236, 13%, 42%);
 }
 .main-section button {
   padding: 10px 25px;
   margin: 20px 0;
-  background-color: hsl(5deg, 85%, 63%);
-  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -91,17 +90,17 @@
   transition: 0.6s ease;
 }
 .main-section button:hover {
-  background-color: hsl(240deg, 100%, 5%);
+  background-color: hsl(240, 100%, 5%);
 }
 
 .side-section {
-  background-color: hsl(240deg, 100%, 5%);
-  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
   padding: 15px;
   margin: 40px 0;
 }
 .side-section h2 {
-  color: hsl(35deg, 77%, 62%);
+  color: hsl(35, 77%, 62%);
   padding: 10px 0;
 }
 .side-section h3 {
@@ -109,15 +108,15 @@
   transition: 0.6s ease;
 }
 .side-section h3:hover {
-  color: hsl(35deg, 77%, 62%);
+  color: hsl(35, 77%, 62%);
 }
 .side-section p {
-  color: hsl(233deg, 8%, 79%);
+  color: hsl(233, 8%, 79%);
   padding: 5px 0;
 }
 .side-section article {
   padding: 20px 0;
-  border-bottom: 1px solid hsl(233deg, 8%, 79%);
+  border-bottom: 1px solid hsl(233, 8%, 79%);
 }
 .side-section article:last-child {
   border-bottom: none;
@@ -143,7 +142,7 @@ footer article .container {
   justify-content: space-evenly;
 }
 footer article span {
-  color: hsl(233deg, 8%, 79%);
+  color: hsl(233, 8%, 79%);
   font-size: 2rem;
 }
 footer article h3 {
@@ -151,17 +150,16 @@ footer article h3 {
   transition: 0.6s ease;
 }
 footer article h3:hover {
-  color: hsl(5deg, 85%, 63%);
+  color: hsl(5, 85%, 63%);
 }
 footer article p {
-  color: hsl(233deg, 8%, 79%);
+  color: hsl(233, 8%, 79%);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 li,
@@ -169,19 +167,15 @@ p {
   list-style: none;
   text-decoration: none;
   line-height: 1.6;
-  color: hsl(240deg, 100%, 5%);
-}
-
-body,
-html {
-  overflow-x: hidden;
+  color: hsl(240, 100%, 5%);
 }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  background-color: hsl(36deg, 100%, 99%);
+  background-color: hsl(36, 100%, 99%);
   padding: 10px;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;

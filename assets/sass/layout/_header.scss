@@ -12,7 +12,6 @@
 
     li {
       padding: 0 20px;
-      // margin-right: px;
       transition: $transition;
       cursor: pointer;
 
@@ -40,7 +39,6 @@
   width: 100vw;
   display: flex;
   justify-content: end;
-  transition: width 0.5s;
 
   .sidebar-container {
     position: relative;
@@ -61,7 +59,8 @@
     margin: 40px 10px;
 
     li {
-      padding: 10px;
+      font-size: 1.4rem;
+      padding: 20px 10px;
       transition: $transition;
       cursor: pointer;
 
@@ -74,5 +73,4 @@
 
 .close {
   width: 0;
-  transition: width 0.5s;
 }

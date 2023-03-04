@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 li,
@@ -16,16 +15,12 @@ p {
   color: $neutral-very-dark-blue;
 }
 
-body,
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   font-size: $font-size-15;
   background-color: $neutral-off-white;
   padding: 10px;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     display: none;
