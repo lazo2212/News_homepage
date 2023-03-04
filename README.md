@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/lazo2212/News_homepage)
-- Live Site URL: [News homepage - live](https://lazo2212.github.io/News_homepage/) (not working properly)
+- Live Site URL: [News homepage - live](https://lazo2212.github.io/News_homepage/)
 
 ## My process
 

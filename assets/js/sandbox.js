@@ -13,7 +13,7 @@ if (window.innerWidth > 750) {
 buttons.forEach((button) =>
   button.addEventListener('click', () => {
     sidebar.classList.toggle('close');
-    sidebarContainer.classList.toggle('close');
+    sidebarContainer.classList.toggle('none');
     if (sidebar.classList[1] !== 'close') {
       document.body.style.overflow = 'hidden';
     } else {
